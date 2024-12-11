@@ -1,5 +1,5 @@
 {
-  "name": "pdf-lib",
+  "name": "@medondo/pdf-lib",
   "version": "1.17.1",
   "description": "Create and modify PDF files with JavaScript",
   "author": "Andrew Dillon <andrew.dillon.j@gmail.com>",
@@ -66,6 +66,9 @@
     "apps:rn:android": "yarn apps:rn:emulator & cd apps/rn && yarn add ./../.. --force && react-native run-android",
     "apps:rn:emulator": "emulator -avd \"$(emulator -list-avds | head -n 1)\" & bash -c 'sleep 5 && adb reverse tcp:8080 tcp:8080 && adb reverse tcp:8081 tcp:8081'"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "main": "cjs/index.js",
   "module": "es/index.js",
   "unpkg": "dist/pdf-lib.min.js",
@@ -120,15 +123,15 @@
     "ts-jest": "^26.1.0",
     "tslint": "^6.1.2",
     "tslint-config-prettier": "^1.18.0",
-    "ttypescript": "^1.5.10",
+    "ttypescript": "^1.5.15",
     "typescript": "^3.9.5"
   },
   "license": "MIT",
   "private": false,
   "homepage": "https://pdf-lib.js.org",
-  "repository": "git+https://github.com/Hopding/pdf-lib.git",
+  "repository": "git+https://github.com/medondo/pdf-lib.git",
   "bugs": {
-    "url": "https://github.com/Hopding/pdf-lib/issues"
+    "url": "https://github.com/medondo/pdf-lib/issues"
   },
   "keywords": [
     "pdf-lib",
